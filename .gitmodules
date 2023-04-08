@@ -1,0 +1,3 @@
+[submodule "MeltingPot/vendor/spdlog"]
+	path = MeltingPot/vendor/spdlog
+	url = https://github.com/gabime/spdlog
