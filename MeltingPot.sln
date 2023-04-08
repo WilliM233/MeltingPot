@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{AEB7FDD3-9FD4-42E1-AAF5-9D1161F6A68B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeltingPot", "MeltingPot\MeltingPot.vcxproj", "{F93388B3-8275-4C00-8996-F8E38100C729}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F93388B3-8275-4C00-8996-F8E38100C729}.Debug|x64.ActiveCfg = Debug|x64
+		{F93388B3-8275-4C00-8996-F8E38100C729}.Debug|x64.Build.0 = Debug|x64
+		{F93388B3-8275-4C00-8996-F8E38100C729}.Release|x64.ActiveCfg = Release|x64
+		{F93388B3-8275-4C00-8996-F8E38100C729}.Release|x64.Build.0 = Release|x64
+		{AEB7FDD3-9FD4-42E1-AAF5-9D1161F6A68B}.Debug|x64.ActiveCfg = Debug|x64
+		{AEB7FDD3-9FD4-42E1-AAF5-9D1161F6A68B}.Debug|x64.Build.0 = Debug|x64
+		{AEB7FDD3-9FD4-42E1-AAF5-9D1161F6A68B}.Release|x64.ActiveCfg = Release|x64
+		{AEB7FDD3-9FD4-42E1-AAF5-9D1161F6A68B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32393383-C136-4768-AF96-5DE91C889752}
+	EndGlobalSection
+EndGlobal
