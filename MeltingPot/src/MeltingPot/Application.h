@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core.h"
+#include "Events/Events.h"
 
 namespace MeltingPot {
 	class MELTINGPOT_API Application

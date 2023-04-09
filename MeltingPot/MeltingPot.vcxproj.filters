@@ -4,6 +4,9 @@
     <Filter Include="MeltingPot">
       <UniqueIdentifier>{88810BEC-7439-4D39-DD40-2695C917E829}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MeltingPot\Events">
+      <UniqueIdentifier>{6C245F0C-D83A-5DA2-21B2-E8C38D072E2A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MeltingPot.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\MeltingPot\EntryPoint.h">
       <Filter>MeltingPot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeltingPot\Events\ApplicationEvent.h">
+      <Filter>MeltingPot\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeltingPot\Events\Events.h">
+      <Filter>MeltingPot\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeltingPot\Events\KeyEvent.h">
+      <Filter>MeltingPot\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeltingPot\Events\MouseEvent.h">
+      <Filter>MeltingPot\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\MeltingPot\Log.h">
       <Filter>MeltingPot</Filter>
