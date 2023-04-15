@@ -34,6 +34,7 @@
     <ClInclude Include="src\MeltingPot\Log.h">
       <Filter>MeltingPot</Filter>
     </ClInclude>
+    <ClInclude Include="src\mppch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MeltingPot\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\MeltingPot\Log.cpp">
       <Filter>MeltingPot</Filter>
     </ClCompile>
+    <ClCompile Include="src\mppch.cpp" />
   </ItemGroup>
 </Project>

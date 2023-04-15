@@ -18,6 +18,9 @@ workspace "MeltingPot"
 		targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 		objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+		pchheader "mppch.h"
+		pchsource "MeltingPot/src/mppch.cpp"
+
 		files
 		{
 			"%{prj.name}/src/**.h",

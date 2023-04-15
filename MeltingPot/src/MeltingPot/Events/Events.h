@@ -2,9 +2,6 @@
 
 #include "MeltingPot/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace MeltingPot {
 
 	// Events in MeltingPot are currently blocking, meaning when an event occurs it

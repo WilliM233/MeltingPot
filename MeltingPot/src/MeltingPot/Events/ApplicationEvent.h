@@ -2,8 +2,6 @@
 
 #include "Events.h"
 
-#include <sstream>
-
 namespace MeltingPot {
 
 	class MELTINGPOT_API WindowResizeEvent : public Event

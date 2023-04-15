@@ -1,3 +1,4 @@
+#include "mppch.h"
 #include "Application.h"
 
 #include "MeltingPot/Events/ApplicationEvent.h"
