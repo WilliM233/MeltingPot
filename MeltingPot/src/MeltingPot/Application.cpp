@@ -4,9 +4,12 @@
 #include "MeltingPot/Events/ApplicationEvent.h"
 #include "MeltingPot/Log.h"
 
+#include <GLFW/glfw3.h>
+
 namespace MeltingPot {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -15,16 +18,11 @@ namespace MeltingPot {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
+		while (m_Running)
 		{
-			MP_TRACE(e);
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			MP_TRACE(e);
-		}
-
-		while (true);
 	}
 }

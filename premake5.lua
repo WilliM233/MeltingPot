@@ -10,6 +10,12 @@ workspace "MeltingPot"
 
 	outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+	-- Include directories relative to root folder (solution directory)
+	IncludeDir = {}
+	IncludeDir["GLFW"] = "MeltingPot/vendor/GLFW/include"
+
+	include "MeltingPot/vendor/GLFW"
+
 	project "MeltingPot"
 		location "MeltingPot"
 		kind "SharedLib"
@@ -30,7 +36,14 @@ workspace "MeltingPot"
 		includedirs
 		{
 			"%{prj.name}/src",
-			"%{prj.name}/vendor/spdlog/include"
+			"%{prj.name}/vendor/spdlog/include",
+			"%{IncludeDir.GLFW}"
+		}
+
+		links
+		{
+			"GLFW",
+			"opengl32.lib"
 		}
 
 		filter "system:windows"

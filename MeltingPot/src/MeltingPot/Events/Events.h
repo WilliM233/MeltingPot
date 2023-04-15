@@ -1,5 +1,6 @@
 #pragma once
 
+#include "mppch.h"
 #include "MeltingPot/Core.h"
 
 namespace MeltingPot {

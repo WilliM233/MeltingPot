@@ -6,12 +6,13 @@
 #include <algorithm>
 #include <functional>
 
-#include <sstream>
 #include <string>
+#include <sstream>
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
 
+#include "MeltingPot/Log.h"
 
 #ifdef MP_PLATFORM_WINDOWS
 	#include <Windows.h>
