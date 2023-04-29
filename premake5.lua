@@ -48,7 +48,7 @@ workspace "MeltingPot"
 
 		filter "system:windows"
 			cppdialect "C++17"
-			staticruntime "On"
+			staticruntime "off"
 			systemversion "latest"
 
 			defines
@@ -64,14 +64,17 @@ workspace "MeltingPot"
 
 		filter "configurations:Debug"
 			defines "MP_DEBUG"
+			buildoptions "/MDd"
 			symbols "On"
 
 		filter "configurations:Release"
 			defines "MP_RELEASE"
+			buildoptions "/MDd"
 			optimize "On"
 
 		filter "configurations:Dist"
 			defines "MP_DIST"
+			buildoptions "/MDd"
 			optimize "On"	
 			
 
@@ -102,7 +105,7 @@ project "Sandbox"
 
 		filter "system:windows"
 			cppdialect "C++17"
-			staticruntime "On"
+			staticruntime "off"
 			systemversion "latest"
 
 			defines

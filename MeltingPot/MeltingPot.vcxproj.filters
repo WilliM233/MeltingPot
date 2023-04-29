@@ -37,6 +37,12 @@
     <ClInclude Include="src\MeltingPot\Events\MouseEvent.h">
       <Filter>MeltingPot\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\MeltingPot\Layer.h">
+      <Filter>MeltingPot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeltingPot\LayerStack.h">
+      <Filter>MeltingPot</Filter>
+    </ClInclude>
     <ClInclude Include="src\MeltingPot\Log.h">
       <Filter>MeltingPot</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MeltingPot\Application.cpp">
+      <Filter>MeltingPot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeltingPot\Layer.cpp">
+      <Filter>MeltingPot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeltingPot\LayerStack.cpp">
       <Filter>MeltingPot</Filter>
     </ClCompile>
     <ClCompile Include="src\MeltingPot\Log.cpp">
