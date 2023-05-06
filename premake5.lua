@@ -13,8 +13,10 @@ workspace "MeltingPot"
 	-- Include directories relative to root folder (solution directory)
 	IncludeDir = {}
 	IncludeDir["GLFW"] = "MeltingPot/vendor/GLFW/include"
+	IncludeDir["Glad"] = "MeltingPot/vendor/Glad/include"
 
 	include "MeltingPot/vendor/GLFW"
+	include "MeltingPot/vendor/Glad"
 
 	project "MeltingPot"
 		location "MeltingPot"
@@ -37,12 +39,14 @@ workspace "MeltingPot"
 		{
 			"%{prj.name}/src",
 			"%{prj.name}/vendor/spdlog/include",
-			"%{IncludeDir.GLFW}"
+			"%{IncludeDir.GLFW}",
+			"%{IncludeDir.Glad}"
 		}
 
 		links
 		{
 			"GLFW",
+			"Glad",
 			"opengl32.lib"
 		}
 
@@ -54,7 +58,8 @@ workspace "MeltingPot"
 			defines
 			{
 				"MP_PLATFORM_WINDOWS",
-				"MP_BUILD_DLL"
+				"MP_BUILD_DLL",
+				"GLFW_INCLUDE_NONE"
 			}
 
 			postbuildcommands
