@@ -7,8 +7,14 @@
     <Filter Include="MeltingPot\Events">
       <UniqueIdentifier>{6C245F0C-D83A-5DA2-21B2-E8C38D072E2A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MeltingPot\ImGui">
+      <UniqueIdentifier>{B2FCE0F8-9EF5-FF4A-C727-E5CFB37FDF56}</UniqueIdentifier>
+    </Filter>
     <Filter Include="MeltingPot\Platform">
       <UniqueIdentifier>{DCF6D7BC-4858-B5CA-D1C5-FB7C3D26EC89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeltingPot\Platform\OpenGL">
+      <UniqueIdentifier>{90D07632-7CE0-2203-E599-8721D1C8119C}</UniqueIdentifier>
     </Filter>
     <Filter Include="MeltingPot\Platform\Windows">
       <UniqueIdentifier>{16BD6CD9-82CA-9ABF-0BB1-96AA77BD6676}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\MeltingPot\Events\MouseEvent.h">
       <Filter>MeltingPot\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\MeltingPot\ImGui\ImGuiLayer.h">
+      <Filter>MeltingPot\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\MeltingPot\Layer.h">
       <Filter>MeltingPot</Filter>
     </ClInclude>
@@ -45,6 +54,9 @@
     </ClInclude>
     <ClInclude Include="src\MeltingPot\Log.h">
       <Filter>MeltingPot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeltingPot\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>MeltingPot\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\MeltingPot\Platform\Windows\WindowsWindow.h">
       <Filter>MeltingPot\Platform\Windows</Filter>
@@ -58,6 +70,9 @@
     <ClCompile Include="src\MeltingPot\Application.cpp">
       <Filter>MeltingPot</Filter>
     </ClCompile>
+    <ClCompile Include="src\MeltingPot\ImGui\ImGuiLayer.cpp">
+      <Filter>MeltingPot\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\MeltingPot\Layer.cpp">
       <Filter>MeltingPot</Filter>
     </ClCompile>
@@ -66,6 +81,9 @@
     </ClCompile>
     <ClCompile Include="src\MeltingPot\Log.cpp">
       <Filter>MeltingPot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeltingPot\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>MeltingPot\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\MeltingPot\Platform\Windows\WindowsWindow.cpp">
       <Filter>MeltingPot\Platform\Windows</Filter>

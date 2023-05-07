@@ -14,9 +14,11 @@ workspace "MeltingPot"
 	IncludeDir = {}
 	IncludeDir["GLFW"] = "MeltingPot/vendor/GLFW/include"
 	IncludeDir["Glad"] = "MeltingPot/vendor/Glad/include"
+	IncludeDir["ImGui"] = "MeltingPot/vendor/imgui"
 
 	include "MeltingPot/vendor/GLFW"
 	include "MeltingPot/vendor/Glad"
+	include "MeltingPot/vendor/imgui"
 
 	project "MeltingPot"
 		location "MeltingPot"
@@ -40,13 +42,15 @@ workspace "MeltingPot"
 			"%{prj.name}/src",
 			"%{prj.name}/vendor/spdlog/include",
 			"%{IncludeDir.GLFW}",
-			"%{IncludeDir.Glad}"
+			"%{IncludeDir.Glad}",
+			"%{IncludeDir.ImGui}"
 		}
 
 		links
 		{
 			"GLFW",
 			"Glad",
+			"ImGui",
 			"opengl32.lib"
 		}
 
