@@ -164,6 +164,7 @@
     <ClInclude Include="src\MeltingPot\Events\KeyEvent.h" />
     <ClInclude Include="src\MeltingPot\Events\MouseEvent.h" />
     <ClInclude Include="src\MeltingPot\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\MeltingPot\Input.h" />
     <ClInclude Include="src\MeltingPot\Layer.h" />
     <ClInclude Include="src\MeltingPot\LayerStack.h" />
     <ClInclude Include="src\MeltingPot\Log.h" />
@@ -171,6 +172,7 @@
     <ClInclude Include="src\MeltingPot\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\MeltingPot\Window.h" />
     <ClInclude Include="src\mppch.h" />
+    <ClInclude Include="src\MeltingPot\Platform\Windows\WindowsInput.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MeltingPot\Application.cpp" />
@@ -183,6 +185,7 @@
     <ClCompile Include="src\mppch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\MeltingPot\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
