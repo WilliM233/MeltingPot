@@ -11,12 +11,19 @@ public:
 
 	void OnUpdate() override
 	{
-		MP_INFO("ExampleLayer::Update");
+		if (MeltingPot::Input::IsKeyPressed(MP_KEY_TAB))
+			MP_TRACE("Tab key is pressed (poll)!");
 	}
 
 	void OnEvent(MeltingPot::Event& event) override
 	{
-		MP_TRACE("{0}", event);
+		if (event.GetEventType() == MeltingPot::EventType::KeyPressed)
+		{
+			MeltingPot::KeyPressedEvent& e = (MeltingPot::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == MP_KEY_TAB)
+				MP_TRACE("Tab key is pressed (event)!");
+			MP_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 };
 

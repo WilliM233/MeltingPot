@@ -165,9 +165,11 @@
     <ClInclude Include="src\MeltingPot\Events\MouseEvent.h" />
     <ClInclude Include="src\MeltingPot\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\MeltingPot\Input.h" />
+    <ClInclude Include="src\MeltingPot\KeyCodes.h" />
     <ClInclude Include="src\MeltingPot\Layer.h" />
     <ClInclude Include="src\MeltingPot\LayerStack.h" />
     <ClInclude Include="src\MeltingPot\Log.h" />
+    <ClInclude Include="src\MeltingPot\MouseButtonCodes.h" />
     <ClInclude Include="src\MeltingPot\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\MeltingPot\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\MeltingPot\Window.h" />

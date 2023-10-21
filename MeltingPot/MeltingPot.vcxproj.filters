@@ -67,6 +67,8 @@
     <ClInclude Include="src\mppch.h" />
     <ClInclude Include="src\MeltingPot\Input.h" />
     <ClInclude Include="src\MeltingPot\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\MeltingPot\KeyCodes.h" />
+    <ClInclude Include="src\MeltingPot\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MeltingPot\Application.cpp">
