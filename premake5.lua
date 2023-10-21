@@ -15,6 +15,7 @@ workspace "MeltingPot"
 	IncludeDir["GLFW"] = "MeltingPot/vendor/GLFW/include"
 	IncludeDir["Glad"] = "MeltingPot/vendor/Glad/include"
 	IncludeDir["ImGui"] = "MeltingPot/vendor/imgui"
+	IncludeDir["glm"] = "MeltingPot/vendor/glm"
 
 	include "MeltingPot/vendor/GLFW"
 	include "MeltingPot/vendor/Glad"
@@ -35,6 +36,8 @@ workspace "MeltingPot"
 		{
 			"%{prj.name}/src/**.h",
 			"%{prj.name}/src/**.cpp",
+			"%{prj.name}/vendor/glm/glm/**.hpp",
+			"%{prj.name}/vendor/glm/glm/**.inl"
 		}
 
 		includedirs
@@ -43,7 +46,8 @@ workspace "MeltingPot"
 			"%{prj.name}/vendor/spdlog/include",
 			"%{IncludeDir.GLFW}",
 			"%{IncludeDir.Glad}",
-			"%{IncludeDir.ImGui}"
+			"%{IncludeDir.ImGui}",
+			"%{IncludeDir.glm}"
 		}
 
 		links
@@ -104,7 +108,8 @@ project "Sandbox"
 		includedirs
 		{
 			"MeltingPot/vendor/spdlog/include",
-			"MeltingPot/src"
+			"MeltingPot/src",
+			"%{IncludeDir.glm}"
 		}
 
 		links
