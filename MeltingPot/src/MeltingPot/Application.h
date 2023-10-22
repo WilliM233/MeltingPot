@@ -7,6 +7,8 @@
 #include "Events/Events.h"
 #include "MeltingPot/Events/ApplicationEvent.h"
 
+#include "MeltingPot/ImGui/ImGuiLayer.h"
+
 namespace MeltingPot {
 	class MELTINGPOT_API Application
 	{
@@ -27,6 +29,7 @@ namespace MeltingPot {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

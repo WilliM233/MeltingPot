@@ -16,9 +16,6 @@
     <Filter Include="src\MeltingPot\Platform">
       <UniqueIdentifier>{73D19B8E-DF08-E425-E812-484954C90A1F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\MeltingPot\Platform\OpenGL">
-      <UniqueIdentifier>{47FBF574-3321-C0DB-1C67-45A7082CE5A7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\MeltingPot\Platform\Windows">
       <UniqueIdentifier>{AD3ED16B-1922-E0AB-2225-0EE88E87A6FC}</UniqueIdentifier>
     </Filter>
@@ -89,9 +86,6 @@
     </ClInclude>
     <ClInclude Include="src\MeltingPot\MouseButtonCodes.h">
       <Filter>src\MeltingPot</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MeltingPot\Platform\OpenGL\ImGuiOpenGLRenderer.h">
-      <Filter>src\MeltingPot\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\MeltingPot\Platform\Windows\WindowsInput.h">
       <Filter>src\MeltingPot\Platform\Windows</Filter>
@@ -1358,6 +1352,9 @@
     <ClCompile Include="src\MeltingPot\Application.cpp">
       <Filter>src\MeltingPot</Filter>
     </ClCompile>
+    <ClCompile Include="src\MeltingPot\ImGui\ImGuiBuild.cpp">
+      <Filter>src\MeltingPot\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\MeltingPot\ImGui\ImGuiLayer.cpp">
       <Filter>src\MeltingPot\ImGui</Filter>
     </ClCompile>
@@ -1369,9 +1366,6 @@
     </ClCompile>
     <ClCompile Include="src\MeltingPot\Log.cpp">
       <Filter>src\MeltingPot</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MeltingPot\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
-      <Filter>src\MeltingPot\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\MeltingPot\Platform\Windows\WindowsInput.cpp">
       <Filter>src\MeltingPot\Platform\Windows</Filter>

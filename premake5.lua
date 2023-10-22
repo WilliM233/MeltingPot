@@ -109,6 +109,7 @@ project "Sandbox"
 		{
 			"MeltingPot/vendor/spdlog/include",
 			"MeltingPot/src",
+			"MeltingPot/vendor",
 			"%{IncludeDir.glm}"
 		}
 
