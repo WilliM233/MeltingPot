@@ -23,8 +23,10 @@ workspace "MeltingPot"
 
 	project "MeltingPot"
 		location "MeltingPot"
-		kind "SharedLib"
+		kind "StaticLib"
 		language "C++"
+		cppdialect "C++17"
+		staticruntime "on"
 
 		targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 		objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -38,6 +40,11 @@ workspace "MeltingPot"
 			"%{prj.name}/src/**.cpp",
 			"%{prj.name}/vendor/glm/glm/**.hpp",
 			"%{prj.name}/vendor/glm/glm/**.inl"
+		}
+
+		defines
+		{
+			"_CRT_SECURE_NO_WARNINGS"
 		}
 
 		includedirs
@@ -59,8 +66,6 @@ workspace "MeltingPot"
 		}
 
 		filter "system:windows"
-			cppdialect "C++17"
-			staticruntime "off"
 			systemversion "latest"
 
 			defines
@@ -70,31 +75,28 @@ workspace "MeltingPot"
 				"GLFW_INCLUDE_NONE"
 			}
 
-			postbuildcommands
-			{
-				("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
-			}
-
 		filter "configurations:Debug"
 			defines "MP_DEBUG"
-			buildoptions "/MDd"
-			symbols "On"
+			runtime "Debug"
+			symbols "on"
 
 		filter "configurations:Release"
 			defines "MP_RELEASE"
-			buildoptions "/MDd"
-			optimize "On"
+			runtime "Release"
+			optimize "on"
 
 		filter "configurations:Dist"
 			defines "MP_DIST"
-			buildoptions "/MDd"
-			optimize "On"	
+			runtime "Release"
+			optimize "on"	
 			
 
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
-		language "C++"
+	language "C++"
+	cppdialect "C++17"
+	staticruntime "on"
 
 		targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 		objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -119,8 +121,6 @@ project "Sandbox"
 		}
 
 		filter "system:windows"
-			cppdialect "C++17"
-			staticruntime "off"
 			systemversion "latest"
 
 			defines
@@ -130,12 +130,15 @@ project "Sandbox"
 
 		filter "configurations:Debug"
 			defines "MP_DEBUG"
-			symbols "On"
+			runtime "Debug"
+			symbols "on"
 
 		filter "configurations:Release"
 			defines "MP_RELEASE"
-			optimize "On"
+			runtime "Release"
+			optimize "on"
 
 		filter "configurations:Dist"
 			defines "MP_DIST"
-			optimize "On"	
+			runtime "Release"
+			optimize "on"	

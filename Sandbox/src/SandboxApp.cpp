@@ -1,5 +1,7 @@
 #include <MeltingPot.h>
 
+#include "imgui/imgui.h"
+
 class ExampleLayer : public MeltingPot::Layer
 {
 public:
@@ -13,6 +15,13 @@ public:
 	{
 		if (MeltingPot::Input::IsKeyPressed(MP_KEY_TAB))
 			MP_TRACE("Tab key is pressed (poll)!");
+	}
+
+	virtual void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World");
+		ImGui::End();
 	}
 
 	void OnEvent(MeltingPot::Event& event) override
