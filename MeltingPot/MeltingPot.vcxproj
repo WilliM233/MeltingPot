@@ -143,6 +143,8 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\MeltingPot\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\MeltingPot\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\MeltingPot.h" />
     <ClInclude Include="src\MeltingPot\Application.h" />
     <ClInclude Include="src\MeltingPot\Core.h" />
@@ -580,6 +582,7 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\MeltingPot\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\MeltingPot\Application.cpp" />
     <ClCompile Include="src\MeltingPot\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\MeltingPot\ImGui\ImGuiLayer.cpp" />

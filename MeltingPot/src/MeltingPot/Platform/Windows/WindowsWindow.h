@@ -1,6 +1,7 @@
 #pragma once
 
 #include "MeltingPot/Window.h"
+#include "MeltingPot/Renderer/GraphicsContext.h"
 
 #include <GLFW/glfw3.h>
 
@@ -27,6 +28,7 @@ namespace MeltingPot {
 		virtual void Shutdown();
 	private:
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 
 		struct WindowData
 		{

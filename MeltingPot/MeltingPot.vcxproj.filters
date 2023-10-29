@@ -40,6 +40,9 @@
     <Filter Include="vendor\glm\glm\gtx">
       <UniqueIdentifier>{B3A6A76B-9F8A-68C1-08EB-6214F4ED5243}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\MeltingPot\Renderer">
+      <UniqueIdentifier>{70fb581d-a98c-411a-b91e-a6b8a1a4d24d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MeltingPot.h">
@@ -1347,6 +1350,10 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
+    <ClInclude Include="src\MeltingPot\Renderer\GraphicsContext.h">
+      <Filter>src\MeltingPot\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeltingPot\Platform\OpenGL\OpenGLContext.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MeltingPot\Application.cpp">
@@ -1376,5 +1383,6 @@
     <ClCompile Include="src\mppch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\MeltingPot\Platform\OpenGL\OpenGLContext.cpp" />
   </ItemGroup>
 </Project>
