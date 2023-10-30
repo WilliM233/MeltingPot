@@ -1354,6 +1354,7 @@
       <Filter>src\MeltingPot\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\MeltingPot\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\MeltingPot\Renderer\Shader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MeltingPot\Application.cpp">
@@ -1384,5 +1385,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\MeltingPot\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\MeltingPot\Renderer\Shader.cpp" />
   </ItemGroup>
 </Project>
