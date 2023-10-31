@@ -10,6 +10,7 @@
 #include "MeltingPot/ImGui/ImGuiLayer.h"
 
 #include "MeltingPot/Renderer/Shader.h"
+#include "MeltingPot/Renderer/Buffer.h"
 
 namespace MeltingPot {
 	class MELTINGPOT_API Application
@@ -35,8 +36,10 @@ namespace MeltingPot {
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 
-		unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
+		unsigned int m_VertexArray;
 		std::unique_ptr<Shader> m_Shader;
+		std::unique_ptr<VertexBuffer> m_VertexBuffer;
+		std::unique_ptr<IndexBuffer> m_IndexBuffer;
 	private:
 		static Application* s_Instance;
 	};

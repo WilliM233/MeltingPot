@@ -1355,6 +1355,9 @@
     </ClInclude>
     <ClInclude Include="src\MeltingPot\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\MeltingPot\Renderer\Shader.h" />
+    <ClInclude Include="src\MeltingPot\Renderer\Buffer.h" />
+    <ClInclude Include="src\MeltingPot\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\MeltingPot\Renderer\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\MeltingPot\Application.cpp">
@@ -1386,5 +1389,8 @@
     </ClCompile>
     <ClCompile Include="src\MeltingPot\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\MeltingPot\Renderer\Shader.cpp" />
+    <ClCompile Include="src\MeltingPot\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\MeltingPot\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\MeltingPot\Renderer\Renderer.cpp" />
   </ItemGroup>
 </Project>
